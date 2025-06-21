@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="travel_recommendation.html">TravelBloom</a>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="travel_recommendation.html" id="home-link">Home</a></li>
+            <li><a href="about.html" id="about-link">About Us</a></li>
+            <li><a href="contact.html" id="contact-link">Contact Us</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Reset</button>
+        </div>
+    </nav>
+
+    <main class="home-content" id="home-page-content">
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>EXPLORE DREAM DESTINATION</h1>
+                <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                <button class="book-now-btn">BOOK NOW</button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div id="recommendation-results" class="recommendation-results"></div>
+    </main>
+
+    <main class="about-us-content" id="about-us-page-content" style="display: none;">
+        <section class="about-section">
+            <h2>ABOUT US</h2>
+            <h3>Welcome to Our Company!</h3>
+            <p>We are a team of passionate individuals dedicated to providing the best experience for people traveling to different destinations around the world. Our values include integrity, innovation, customer satisfaction, and teamwork.</p>
+            <p>We believe that by working together, we can achieve our goals.</p>
+            <p>Feel free to explore our website to learn more about what we offer!</p>
+        </section>
+        <section class="team-section">
+            <h3>Our Team</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <h4>John Doe</h4>
+                    <p>CEO</p>
+                    <p>John is responsible for leading the company's vision and strategy.</p>
+                </div>
+                <div class="team-member">
+                    <h4>Jane Smith</h4>
+                    <p>Lead Developer</p>
+                    <p>Jane spearheads the development of our innovative travel platforms.</p>
+                </div>
+                <div class="team-member">
+                    <h4>Peter Jones</h4>
+                    <p>Marketing Manager</p>
+                    <p>Peter handles our marketing efforts and client outreach.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="contact-us-content" id="contact-us-page-content" style="display: none;">
+        <section class="contact-section">
+            <h2>CONTACT US</h2>
+            <h3>Get in touch</h3>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required >
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
